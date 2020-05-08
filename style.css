@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+canvas {
+  margin-left: 1rem;
+}
+
+.temperature {
+  flex-direction: column;
+}
+.temperature-description {
+  width: 100%;
+  text-align: center;
+  display: inline;
+  font-size: 1rem;
+}
+.degree-section {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  color: white;
+  height: 50px;
+  background-color: rgb(32, 32, 32);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 1rem;
+}
+
+footer p a {
+  color: #f88ee8;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #734b6d;
+}
